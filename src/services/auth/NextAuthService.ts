@@ -52,6 +52,12 @@ export class NextAuthService implements IAuthService {
       }
     };
 
+    /**
+     * Note: NextAuth doesn't have real-time auth state changes like Firebase.
+     * This implementation provides initial state only.
+     * For real-time updates, use SessionProvider context in React components.
+     */
+
     handleAuthChange();
 
     return () => {
